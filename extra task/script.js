@@ -10,7 +10,7 @@ window.onload = ()=> {
     let submit = document.querySelector('.login');
     let username = /\w{2,}/;
     let email = /\b\w{2,}\@[a-z]{2,6}\.[a-z]{2,6}\b/i;
-    let phoneNumber = /^\+3\d{0,3}\d{3}\d{2}\d{2}\d{2}/;
+    let phoneNumber = /^\+3\d{0,3}\d{3}\d{2}\d{2}\d{1}$/;
     
     inputs[0].onchange = ()=>{
         if(username.test(inputs[0].value)){
